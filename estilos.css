@@ -2219,3 +2219,1269 @@ HERO INTERNO
 .internal-breadcrumb span{
     color:rgba(255,255,255,.85);
 }
+
+/*=====================================
+INTRODUCCIÓN HISTORIA
+======================================*/
+
+.history-intro {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+    padding: 110px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+}
+
+/*=====================================
+IMAGEN DE INTRODUCCIÓN
+======================================*/
+
+.history-intro-image {
+    position: relative;
+    min-height: 520px;
+}
+
+.history-intro-image img {
+    width: 100%;
+    height: 520px;
+    display: block;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 22px 55px rgba(35, 55, 115, 0.18);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.history-intro-image:hover img {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 65px rgba(35, 55, 115, 0.24);
+}
+
+/*=====================================
+TARJETA DEL AÑO
+======================================*/
+
+.history-year-card {
+    position: absolute;
+    left: -35px;
+    bottom: 35px;
+    width: 220px;
+    padding: 24px;
+    border-radius: 18px;
+    background: #233773;
+    color: #ffffff;
+    box-shadow: 0 18px 40px rgba(35, 55, 115, 0.3);
+}
+
+.history-year-card span {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ffed00;
+}
+
+.history-year-card strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 3.2rem;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.history-year-card p {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/*=====================================
+CONTENIDO DE INTRODUCCIÓN
+======================================*/
+
+.history-intro-content {
+    max-width: 590px;
+}
+
+.history-intro-content .section-tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 8px 15px;
+    border-radius: 999px;
+    background: rgba(35, 55, 115, 0.1);
+    color: #233773;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.history-intro-content h2 {
+    margin: 0 0 24px;
+    color: #233773;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.12;
+    font-weight: 800;
+}
+
+.history-intro-content > p {
+    margin: 0 0 18px;
+    color: #525866;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/*=====================================
+DESTACADO DE HISTORIA
+======================================*/
+
+.history-highlight {
+    position: relative;
+    margin-top: 32px;
+    padding: 28px 30px 28px 72px;
+    border-left: 5px solid #e11b14;
+    border-radius: 0 18px 18px 0;
+    background: #f4f6fb;
+}
+
+.history-highlight i {
+    position: absolute;
+    top: 24px;
+    left: 25px;
+    color: #e11b14;
+    font-size: 2rem;
+}
+
+.history-highlight p {
+    margin: 0;
+    color: #233773;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/*=====================================
+RESPONSIVE INTRODUCCIÓN HISTORIA
+======================================*/
+
+@media (max-width: 992px) {
+    .history-intro {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        padding: 85px 0;
+    }
+
+    .history-intro-image {
+        width: min(720px, 100%);
+        margin: 0 auto;
+    }
+
+    .history-intro-content {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .history-intro {
+        width: min(92%, 650px);
+        padding: 70px 0;
+    }
+
+    .history-intro-image {
+        min-height: auto;
+        padding-bottom: 65px;
+    }
+
+    .history-intro-image img {
+        height: 420px;
+        border-radius: 20px;
+    }
+
+    .history-year-card {
+        left: 50%;
+        bottom: 0;
+        width: min(88%, 320px);
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .history-year-card strong {
+        font-size: 2.7rem;
+    }
+
+    .history-intro-content {
+        text-align: center;
+    }
+
+    .history-highlight {
+        padding: 65px 24px 26px;
+        border-left: none;
+        border-top: 5px solid #e11b14;
+        border-radius: 18px;
+    }
+
+    .history-highlight i {
+        top: 22px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .history-intro {
+        padding: 55px 0;
+        gap: 45px;
+    }
+
+    .history-intro-image img {
+        height: 340px;
+    }
+
+    .history-year-card {
+        padding: 20px;
+    }
+
+    .history-intro-content h2 {
+        font-size: 2rem;
+    }
+
+    .history-intro-content > p {
+        font-size: 0.96rem;
+    }
+}
+
+/*=====================================
+SECCIÓN LÍNEA DEL TIEMPO
+======================================*/
+
+.timeline-section {
+    padding: 110px 0;
+    background: #f6f8fc;
+}
+
+/*=====================================
+TÍTULO DE LA SECCIÓN
+======================================*/
+
+.timeline-section .section-title {
+    width: min(760px, 90%);
+    margin: 0 auto 75px;
+    text-align: center;
+}
+
+.timeline-section .section-title h4 {
+    margin: 0 0 14px;
+    color: #e11b14;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.timeline-section .section-title h2 {
+    margin: 0 0 20px;
+    color: #233773;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.timeline-section .section-title p {
+    margin: 0 auto;
+    max-width: 650px;
+    color: #5d6472;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+/*=====================================
+CONTENEDOR DE LA LÍNEA DEL TIEMPO
+======================================*/
+
+.timeline {
+    position: relative;
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    border-radius: 999px;
+    background: linear-gradient(
+        to bottom,
+        #233773,
+        #e11b14,
+        #ffed00
+    );
+    transform: translateX(-50%);
+}
+
+/*=====================================
+ELEMENTOS DE LA LÍNEA DEL TIEMPO
+======================================*/
+
+.timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    align-items: center;
+    min-height: 210px;
+}
+
+.timeline-item:nth-child(odd) .timeline-card {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+}
+
+.timeline-item:nth-child(even) .timeline-card {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: start;
+}
+
+.timeline-year {
+    position: relative;
+    z-index: 2;
+    grid-column: 2;
+    grid-row: 1;
+    width: 82px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 6px solid #f6f8fc;
+    border-radius: 50%;
+    background: #233773;
+    color: #ffffff;
+    box-shadow: 0 10px 28px rgba(35, 55, 115, 0.25);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+/*=====================================
+TARJETAS DE LA LÍNEA DEL TIEMPO
+======================================*/
+
+.timeline-card {
+    position: relative;
+    width: min(420px, 100%);
+    padding: 34px;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 18px 45px rgba(35, 55, 115, 0.1);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 25px 55px rgba(35, 55, 115, 0.17);
+}
+
+.timeline-item:nth-child(odd) .timeline-card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -14px;
+    width: 28px;
+    height: 28px;
+    background: #ffffff;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.timeline-item:nth-child(even) .timeline-card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -14px;
+    width: 28px;
+    height: 28px;
+    background: #ffffff;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.timeline-card i {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border-radius: 16px;
+    background: rgba(35, 55, 115, 0.1);
+    color: #233773;
+    font-size: 1.55rem;
+}
+
+.timeline-card h3 {
+    margin: 0 0 14px;
+    color: #233773;
+    font-size: 1.35rem;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.timeline-card p {
+    margin: 0;
+    color: #5d6472;
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+/*=====================================
+ÚLTIMO ELEMENTO DE LA LÍNEA DEL TIEMPO
+======================================*/
+
+.timeline-item:last-child .timeline-year {
+    background: #e11b14;
+}
+
+.timeline-item:last-child .timeline-card {
+    border: 2px solid rgba(225, 27, 20, 0.15);
+}
+
+.timeline-item:last-child .timeline-card i {
+    background: rgba(225, 27, 20, 0.1);
+    color: #e11b14;
+}
+
+/*=====================================
+RESPONSIVE LÍNEA DEL TIEMPO
+======================================*/
+
+@media (max-width: 900px) {
+    .timeline-section {
+        padding: 85px 0;
+    }
+
+    .timeline {
+        width: min(720px, 90%);
+        gap: 42px;
+    }
+
+    .timeline::before {
+        left: 40px;
+        transform: none;
+    }
+
+    .timeline-item {
+        grid-template-columns: 80px 1fr;
+        min-height: auto;
+        align-items: flex-start;
+    }
+
+    .timeline-year {
+        grid-column: 1;
+        grid-row: 1;
+        width: 72px;
+        height: 72px;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-card,
+    .timeline-item:nth-child(even) .timeline-card {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: stretch;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-card::after,
+    .timeline-item:nth-child(even) .timeline-card::after {
+        top: 28px;
+        left: -13px;
+        right: auto;
+        transform: rotate(45deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .timeline-section {
+        padding: 70px 0;
+    }
+
+    .timeline-section .section-title {
+        margin-bottom: 55px;
+    }
+
+    .timeline {
+        width: 92%;
+    }
+
+    .timeline::before {
+        left: 30px;
+        width: 3px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 60px 1fr;
+    }
+
+    .timeline-year {
+        width: 58px;
+        height: 58px;
+        border-width: 5px;
+        font-size: 0.75rem;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-card,
+    .timeline-item:nth-child(even) .timeline-card {
+        margin-left: 14px;
+    }
+
+    .timeline-card {
+        padding: 26px 22px;
+        border-radius: 18px;
+    }
+
+    .timeline-card i {
+        width: 50px;
+        height: 50px;
+        font-size: 1.35rem;
+    }
+
+    .timeline-card h3 {
+        font-size: 1.18rem;
+    }
+
+    .timeline-card p {
+        font-size: 0.94rem;
+    }
+}
+
+/*=====================================
+MISIÓN Y VISIÓN
+======================================*/
+
+.mission-vision {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+    padding: 110px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+/*=====================================
+TARJETAS DE MISIÓN Y VISIÓN
+======================================*/
+
+.mission-card,
+.vision-card {
+    position: relative;
+    overflow: hidden;
+    padding: 48px 42px;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 20px 50px rgba(35, 55, 115, 0.12);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 60px rgba(35, 55, 115, 0.18);
+}
+
+.mission-card::before,
+.vision-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+}
+
+.mission-card::before {
+    background: #233773;
+}
+
+.vision-card::before {
+    background: #e11b14;
+}
+
+/*=====================================
+ICONOS DE MISIÓN Y VISIÓN
+======================================*/
+
+.mission-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    border-radius: 20px;
+    background: rgba(35, 55, 115, 0.1);
+    color: #233773;
+    font-size: 2rem;
+}
+
+.vision-card .mission-icon {
+    background: rgba(225, 27, 20, 0.1);
+    color: #e11b14;
+}
+
+/*=====================================
+CONTENIDO DE MISIÓN Y VISIÓN
+======================================*/
+
+.mission-card span,
+.vision-card span {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+}
+
+.mission-card span {
+    color: #233773;
+}
+
+.vision-card span {
+    color: #e11b14;
+}
+
+.mission-card h2,
+.vision-card h2 {
+    margin: 0 0 20px;
+    color: #233773;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.mission-card p,
+.vision-card p {
+    margin: 0;
+    color: #5d6472;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/*=====================================
+DECORACIÓN DE TARJETAS
+======================================*/
+
+.mission-card::after,
+.vision-card::after {
+    content: "";
+    position: absolute;
+    right: -70px;
+    bottom: -70px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    opacity: 0.08;
+}
+
+.mission-card::after {
+    background: #233773;
+}
+
+.vision-card::after {
+    background: #e11b14;
+}
+
+/*=====================================
+RESPONSIVE MISIÓN Y VISIÓN
+======================================*/
+
+@media (max-width: 850px) {
+    .mission-vision {
+        grid-template-columns: 1fr;
+        padding: 85px 0;
+    }
+
+    .mission-card,
+    .vision-card {
+        padding: 42px 36px;
+    }
+}
+
+@media (max-width: 520px) {
+    .mission-vision {
+        width: 92%;
+        padding: 70px 0;
+        gap: 25px;
+    }
+
+    .mission-card,
+    .vision-card {
+        padding: 34px 26px;
+        border-radius: 20px;
+    }
+
+    .mission-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 22px;
+        font-size: 1.7rem;
+    }
+
+    .mission-card h2,
+    .vision-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .mission-card p,
+    .vision-card p {
+        font-size: 0.95rem;
+    }
+}
+
+/*=====================================
+PRINCIPIOS
+======================================*/
+
+.principles-section {
+    padding: 110px 0;
+    background: #f8f9fc;
+}
+
+.principles-section .section-title {
+    width: min(760px, 90%);
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.principles-section .section-title h4 {
+    margin-bottom: 14px;
+    color: #E11B14;
+    font-size: .82rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.principles-section .section-title h2 {
+    margin-bottom: 18px;
+    color: #233773;
+    font-size: clamp(2rem,4vw,3rem);
+    font-weight: 800;
+}
+
+.principles-section .section-title p {
+    color: #5d6472;
+    line-height: 1.8;
+}
+
+/*=====================================
+GRID
+======================================*/
+
+.principles-grid{
+    width:min(1180px,90%);
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+/*=====================================
+CARDS
+======================================*/
+
+.principle-card{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:22px;
+
+    box-shadow:0 18px 45px rgba(35,55,115,.10);
+
+    transition:.35s;
+}
+
+.principle-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 60px rgba(35,55,115,.18);
+
+}
+
+.principle-card i{
+
+    width:70px;
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:rgba(35,55,115,.10);
+
+    color:#233773;
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+}
+
+.principle-card h3{
+
+    color:#233773;
+
+    margin-bottom:15px;
+
+    font-size:1.45rem;
+
+    font-weight:800;
+
+}
+
+.principle-card p{
+
+    color:#5d6472;
+
+    line-height:1.8;
+
+}
+
+/*=====================================
+RESPONSIVE PRINCIPIOS
+======================================*/
+
+@media(max-width:850px){
+
+.principles-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.principles-section{
+
+padding:75px 0;
+
+}
+
+.principle-card{
+
+padding:32px 26px;
+
+}
+
+.principle-card i{
+
+width:60px;
+height:60px;
+
+font-size:1.7rem;
+
+}
+
+}
+
+/*=====================================
+VALORES
+======================================*/
+
+.values-section {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+    padding: 110px 0;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+/*=====================================
+CONTENIDO DE VALORES
+======================================*/
+
+.values-content {
+    max-width: 520px;
+}
+
+.values-content .section-tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 8px 15px;
+    border-radius: 999px;
+    background: rgba(225, 27, 20, 0.1);
+    color: #e11b14;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.values-content h2 {
+    margin: 0 0 22px;
+    color: #233773;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.values-content p {
+    margin: 0 0 30px;
+    color: #5d6472;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/*=====================================
+BOTÓN DE VALORES
+======================================*/
+
+.values-content .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 24px;
+    border-radius: 12px;
+    background: #233773;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.3s ease, background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.values-content .btn-primary:hover {
+    background: #e11b14;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(225, 27, 20, 0.25);
+}
+
+.values-content .btn-primary i {
+    transition: transform 0.3s ease;
+}
+
+.values-content .btn-primary:hover i {
+    transform: translateX(5px);
+}
+
+/*=====================================
+GRID DE VALORES
+======================================*/
+
+.values-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/*=====================================
+TARJETAS DE VALORES
+======================================*/
+
+.value-card {
+    position: relative;
+    overflow: hidden;
+    padding: 30px 32px 30px 105px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 16px 40px rgba(35, 55, 115, 0.1);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.value-card:hover {
+    transform: translateX(8px);
+    box-shadow: 0 22px 50px rgba(35, 55, 115, 0.17);
+}
+
+.value-card i {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: rgba(35, 55, 115, 0.1);
+    color: #233773;
+    font-size: 1.55rem;
+    transform: translateY(-50%);
+}
+
+.value-card h3 {
+    margin: 0 0 9px;
+    color: #233773;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.value-card p {
+    margin: 0;
+    color: #5d6472;
+    font-size: 0.96rem;
+    line-height: 1.7;
+}
+
+/*=====================================
+VARIACIONES DE COLOR
+======================================*/
+
+.value-card:nth-child(2) i {
+    background: rgba(225, 27, 20, 0.1);
+    color: #e11b14;
+}
+
+.value-card:nth-child(3) i {
+    background: rgba(255, 237, 0, 0.22);
+    color: #233773;
+}
+
+.value-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: #233773;
+}
+
+.value-card:nth-child(2)::before {
+    background: #e11b14;
+}
+
+.value-card:nth-child(3)::before {
+    background: #ffed00;
+}
+
+/*=====================================
+RESPONSIVE VALORES
+======================================*/
+
+@media (max-width: 900px) {
+    .values-section {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 85px 0;
+    }
+
+    .values-content {
+        max-width: 720px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .values-grid {
+        width: min(720px, 100%);
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .values-section {
+        width: 92%;
+        padding: 70px 0;
+    }
+
+    .value-card {
+        padding: 92px 24px 26px;
+        text-align: center;
+    }
+
+    .value-card i {
+        top: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .value-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .values-content .btn-primary {
+        width: 100%;
+    }
+}
+
+/*=====================================
+CTA HISTORIA
+======================================*/
+
+.history-cta {
+    position: relative;
+    overflow: hidden;
+    width: min(1180px, 90%);
+    margin: 0 auto 110px;
+    padding: 58px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    border-radius: 28px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(35, 55, 115, 0.98),
+            rgba(25, 39, 88, 0.98)
+        );
+    box-shadow: 0 24px 60px rgba(35, 55, 115, 0.28);
+}
+
+/*=====================================
+DECORACIÓN CTA
+======================================*/
+
+.history-cta::before,
+.history-cta::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.history-cta::before {
+    top: -110px;
+    right: -70px;
+    width: 260px;
+    height: 260px;
+    background: rgba(255, 237, 0, 0.12);
+}
+
+.history-cta::after {
+    bottom: -130px;
+    left: 35%;
+    width: 280px;
+    height: 280px;
+    background: rgba(225, 27, 20, 0.12);
+}
+
+.history-cta > div,
+.history-cta > a {
+    position: relative;
+    z-index: 2;
+}
+
+/*=====================================
+CONTENIDO CTA
+======================================*/
+
+.history-cta > div {
+    max-width: 720px;
+}
+
+.history-cta span {
+    display: inline-block;
+    margin-bottom: 13px;
+    color: #ffed00;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.history-cta h2 {
+    margin: 0 0 16px;
+    color: #ffffff;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.12;
+    font-weight: 800;
+}
+
+.history-cta p {
+    margin: 0;
+    max-width: 650px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+/*=====================================
+BOTÓN CTA
+======================================*/
+
+.history-cta .btn-primary {
+    flex-shrink: 0;
+    min-width: 210px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 24px;
+    border-radius: 13px;
+    background: #ffed00;
+    color: #233773;
+    text-decoration: none;
+    font-weight: 800;
+    box-shadow: 0 14px 30px rgba(255, 237, 0, 0.2);
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.history-cta .btn-primary:hover {
+    background: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(255, 255, 255, 0.18);
+}
+
+.history-cta .btn-primary i {
+    transition: transform 0.3s ease;
+}
+
+.history-cta .btn-primary:hover i {
+    transform: translateX(5px);
+}
+
+/*=====================================
+RESPONSIVE CTA HISTORIA
+======================================*/
+
+@media (max-width: 900px) {
+    .history-cta {
+        padding: 50px 42px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 85px;
+    }
+}
+
+@media (max-width: 600px) {
+    .history-cta {
+        width: 92%;
+        padding: 40px 26px;
+        border-radius: 22px;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .history-cta > div {
+        max-width: 100%;
+    }
+
+    .history-cta .btn-primary {
+        width: 100%;
+        min-width: 0;
+    }
+}
