@@ -3485,3 +3485,694 @@ RESPONSIVE CTA HISTORIA
         min-width: 0;
     }
 }
+
+/* =================================
+   DECLARACIÓN DEL PEI
+================================= */
+
+.pei-declaration {
+    position: relative;
+    overflow: hidden;
+    padding: 130px 20px;
+    background: #ffffff;
+}
+
+.pei-declaration::before {
+    content: "";
+    position: absolute;
+    top: -180px;
+    right: -180px;
+    width: 430px;
+    height: 430px;
+    border: 1px solid rgba(35, 55, 115, 0.12);
+    border-radius: 50%;
+}
+
+.pei-declaration::after {
+    content: "";
+    position: absolute;
+    bottom: -220px;
+    left: -180px;
+    width: 480px;
+    height: 480px;
+    border: 1px solid rgba(225, 27, 20, 0.1);
+    border-radius: 50%;
+}
+
+/*==================================
+     AJUSTES DE TEXTO - DECLARACIÓN
+==================================*/
+
+.pei-declaration h2 {
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+.pei-main-phrase {
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+.pei-concept {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.pei-declaration-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pei-declaration .section-label {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #e11b14;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.pei-declaration h2 {
+    margin-bottom: 30px;
+    color: #233773;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.05;
+}
+
+.pei-main-phrase {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #333333;
+    font-size: clamp(1.3rem, 2.8vw, 2rem);
+    line-height: 1.6;
+}
+
+.pei-concepts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px 45px;
+    margin-top: 70px;
+}
+
+.pei-concept {
+    position: relative;
+    padding-bottom: 10px;
+    color: #233773;
+    font-size: clamp(1.15rem, 2vw, 1.5rem);
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: default;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.pei-concept::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #ffed00;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.pei-concept:hover {
+    color: #e11b14;
+    transform: translateY(-5px);
+}
+
+.pei-concept:hover::after {
+    width: 100%;
+}
+
+/* =================================
+   RESPONSIVE DECLARACIÓN PEI
+================================= */
+
+@media (max-width: 768px) {
+
+    .pei-declaration {
+        padding: 90px 20px;
+    }
+
+    .pei-main-phrase {
+        line-height: 1.5;
+    }
+
+    .pei-concepts {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 20px;
+        margin-top: 55px;
+    }
+
+    .pei-concept {
+        padding: 16px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .pei-declaration {
+        padding: 75px 18px;
+    }
+
+    .pei-concepts {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
+
+/* =================================
+   CORAZÓN DEL PEI
+================================= */
+
+.pei-core{
+    padding:120px 20px;
+    background:#f8faff;
+}
+
+.pei-core .section-heading{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 90px;
+}
+
+/*==================================
+      TEXTO DEL CORAZÓN DEL PEI
+==================================*/
+
+.pei-core .section-heading h2 {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.pei-core .section-heading p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.diagram-center h3 {
+    font-weight: 800;
+    letter-spacing: -0.4px;
+}
+
+.diagram-item h4 {
+    font-weight: 800;
+    letter-spacing: -0.2px;
+}
+
+.diagram-item p {
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.pei-diagram{
+
+    position:relative;
+
+    width:700px;
+    height:700px;
+
+    margin:0 auto;
+
+}
+
+.diagram-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #233773;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(35, 55, 115, 0.25);
+    border: 8px solid white;
+
+    z-index: 10;
+
+    transition: all .35s ease;
+}
+
+
+
+.diagram-center i{
+
+    font-size:3rem;
+
+    color:#FFED00;
+
+    margin-bottom:15px;
+
+}
+
+.diagram-center h3{
+
+font-size:1.35rem;
+font-weight:800;
+letter-spacing:1px;
+text-transform:uppercase;
+
+}
+
+.diagram-item{
+
+    position:absolute;
+
+    width:180px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.diagram-item i{
+
+    width:80px;
+    height:80px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#233773;
+
+    font-size:2rem;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.diagram-item h4{
+
+    color:#233773;
+
+    margin-bottom:10px;
+
+}
+
+.diagram-item p{
+
+    color:#666;
+
+    font-size:.95rem;
+
+    line-height:1.6;
+
+}
+
+.diagram-item.top i{
+    color:#233773;
+}
+
+.diagram-item.left i{
+    color:#2E8B57;
+}
+
+.diagram-item.right i{
+    color:#D8A500;
+}
+
+.diagram-item.bottom i{
+    color:#E11B14;
+}
+
+/*==================================
+      POSICIONES DEL DIAGRAMA
+==================================*/
+
+.diagram-item.top {
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.diagram-item.left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.diagram-item.right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.diagram-item.bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*==================================
+        ANIMACIONES DEL DIAGRAMA
+==================================*/
+
+/*
+La posición completa permanece quieta.
+Solo se anima el círculo del icono para evitar
+que las líneas y los textos se descuadren.
+*/
+
+.diagram-item i {
+    transform-origin: center;
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.diagram-item:hover i {
+    transform: translateY(-6px) scale(1.08);
+
+    color: #E11B14;
+
+    box-shadow:
+        0 16px 32px rgba(35, 55, 115, 0.17);
+}
+
+.diagram-item h4 {
+    transition: color 0.3s ease;
+}
+
+.diagram-item:hover h4 {
+    color: #E11B14;
+}
+
+
+
+/*==================================
+          PILARES DEL PEI
+==================================*/
+
+.pei-pillars {
+    padding: 110px 8%;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(35, 55, 115, 0.035),
+            rgba(255, 255, 255, 0) 45%
+        ),
+        #ffffff;
+}
+
+.pei-pillars .section-heading {
+    max-width: 760px;
+    margin-bottom: 65px;
+}
+
+.pei-pillars .section-heading h2 {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.15;
+    color: #233773;
+    margin: 12px 0 18px;
+}
+
+.pei-pillars .section-heading p {
+    max-width: 680px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #5f6472;
+}
+
+.pillar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.pillar-item {
+    position: relative;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 35px;
+
+    min-height: 190px;
+    padding: 38px 48px;
+
+    background: #ffffff;
+    border: 1px solid rgba(35, 55, 115, 0.12);
+    border-radius: 22px;
+
+    box-shadow: 0 12px 35px rgba(35, 55, 115, 0.06);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+/* Franja lateral de identidad */
+
+.pillar-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 7px;
+    height: 100%;
+
+    background: #233773;
+
+    transform: scaleY(0);
+    transform-origin: bottom;
+
+    transition: transform 0.35s ease;
+}
+
+/* Número gigante decorativo */
+
+.pillar-item::after {
+    content: attr(data-number);
+
+    position: absolute;
+    right: 30px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: clamp(6rem, 12vw, 10rem);
+    font-weight: 800;
+    line-height: 1;
+
+    color: rgba(35, 55, 115, 0.045);
+
+    pointer-events: none;
+
+    transition:
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.pillar-number {
+    position: relative;
+    z-index: 2;
+
+    font-size: clamp(3.3rem, 6vw, 5.2rem);
+    font-weight: 800;
+    line-height: 1;
+
+    color: #233773;
+
+    transition:
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.pillar-content {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+}
+
+.pillar-content h3 {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    line-height: 1.2;
+
+    color: #111827;
+
+    margin-bottom: 14px;
+
+    transition:
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.pillar-content h3::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 4px;
+
+    margin-top: 12px;
+
+    background: #ffed00;
+    border-radius: 50px;
+
+    transition: width 0.35s ease;
+}
+
+.pillar-content p {
+    max-width: 670px;
+
+    font-size: 1.05rem;
+    line-height: 1.75;
+
+    color: #606575;
+}
+
+/* Interacción */
+
+.pillar-item:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(35, 55, 115, 0.3);
+
+    box-shadow:
+        0 20px 45px rgba(35, 55, 115, 0.13);
+}
+
+.pillar-item:hover::before {
+    transform: scaleY(1);
+}
+
+/* Integral */
+
+.pillar-item:nth-child(1):hover::after{
+    color:rgba(35,55,115,.07);
+}
+
+/* Autonomía */
+
+.pillar-item:nth-child(2):hover::after{
+    color:rgba(46,139,87,.08);
+}
+
+/* Paz */
+
+.pillar-item:nth-child(3):hover::after{
+    color:rgba(217,164,0,.08);
+}
+
+/* Felicidad */
+
+.pillar-item:nth-child(4):hover::after{
+    color:rgba(225,27,20,.08);
+}
+
+/* Integral */
+
+.pillar-item:nth-child(1):hover .pillar-number{
+    color:#233773;
+}
+
+/* Autonomía */
+
+.pillar-item:nth-child(2):hover .pillar-number{
+    color:#2E8B57;
+}
+
+/* Paz */
+
+.pillar-item:nth-child(3):hover .pillar-number{
+    color:#D9A400;
+}
+
+/* Felicidad */
+
+.pillar-item:nth-child(4):hover .pillar-number{
+    color:#E11B14;
+}
+
+.pillar-item:hover .pillar-content h3 {
+    color: #233773;
+    transform: translateX(6px);
+}
+
+.pillar-item:hover .pillar-content h3::after {
+    width: 95px;
+}
+
+/* Variaciones de cada pilar */
+
+.pillar-item:nth-child(2)::before {
+    background: #e11b14;
+}
+
+.pillar-item:nth-child(3)::before {
+    background: #ffed00;
+}
+
+.pillar-item:nth-child(4)::before {
+    background: #0afff3;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .pei-pillars {
+        padding: 80px 6%;
+    }
+
+    .pillar-item {
+        grid-template-columns: 1fr;
+        gap: 18px;
+
+        min-height: auto;
+        padding: 32px 28px;
+    }
+
+    .pillar-number {
+        font-size: 3.5rem;
+    }
+
+    .pillar-item::after {
+        right: 10px;
+        top: 25%;
+
+        font-size: 7rem;
+    }
+
+    .pillar-content p {
+        font-size: 1rem;
+    }
+}
