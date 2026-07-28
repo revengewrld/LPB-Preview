@@ -4176,3 +4176,1325 @@ que las líneas y los textos se descuadren.
         font-size: 1rem;
     }
 }
+
+/* ==========================================================
+   PÁGINA PREESCOLAR
+========================================================== */
+
+
+/* ==========================================================
+   HERO PREESCOLAR
+========================================================== */
+
+.preschool-hero {
+    min-height: 690px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(16, 31, 78, 0.94) 0%,
+            rgba(25, 49, 112, 0.85) 52%,
+            rgba(35, 55, 115, 0.42) 100%
+        ),
+        url("img/preescolar-hero.jpg") center / cover no-repeat;
+}
+
+.preschool-hero .internal-overlay {
+    background:
+        radial-gradient(
+            circle at 78% 30%,
+            rgba(255, 237, 0, 0.16),
+            transparent 32%
+        );
+}
+
+.preschool-hero .internal-hero-content {
+    max-width: 780px;
+}
+
+.preschool-hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 18px;
+    padding: 8px 18px;
+
+    color: #233773;
+    background: #ffed00;
+
+    border-radius: 999px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.preschool-hero h1 {
+    max-width: 760px;
+    font-size: clamp(2.6rem, 5vw, 4.8rem);
+    line-height: 1.08;
+}
+
+.preschool-hero p {
+    max-width: 680px;
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   INFORMACIÓN DESTACADA
+========================================================== */
+
+.preschool-highlights {
+    position: relative;
+    z-index: 5;
+
+    margin-top: -72px;
+    padding: 0 0 90px;
+}
+
+.preschool-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.preschool-highlight {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    min-height: 170px;
+    padding: 28px 24px;
+
+    background: #ffffff;
+    border: 1px solid rgba(35, 55, 115, 0.09);
+    border-radius: 22px;
+
+    box-shadow:
+        0 18px 45px rgba(35, 55, 115, 0.11);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.preschool-highlight:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(35, 55, 115, 0.2);
+
+    box-shadow:
+        0 25px 55px rgba(35, 55, 115, 0.16);
+}
+
+.preschool-highlight-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+
+    width: 52px;
+    height: 52px;
+
+    color: #233773;
+    background: rgba(255, 237, 0, 0.28);
+
+    border-radius: 16px;
+
+    font-size: 1.45rem;
+}
+
+.preschool-highlight:nth-child(2)
+.preschool-highlight-icon {
+    color: #ffffff;
+    background: #233773;
+}
+
+.preschool-highlight:nth-child(3)
+.preschool-highlight-icon {
+    color: #ffffff;
+    background: #e11b14;
+}
+
+.preschool-highlight:nth-child(4)
+.preschool-highlight-icon {
+    color: #233773;
+    background: #ffed00;
+}
+
+.preschool-highlight h3 {
+    margin-bottom: 8px;
+
+    color: #17265a;
+
+    font-size: 1rem;
+    line-height: 1.35;
+
+    font-weight:600;
+}
+
+.preschool-highlight p {
+
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    line-height: 1.9;
+
+    color: #4f5d73;
+
+}
+
+
+/* ==========================================================
+   BIENVENIDA AL PREESCOLAR
+========================================================== */
+
+.preschool-welcome {
+    padding: 110px 0;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8faff 100%
+        );
+}
+
+.preschool-welcome .section-label {
+    font-weight: 700;
+}
+
+.preschool-welcome-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.preschool-welcome-image {
+    position: relative;
+
+    min-height: 530px;
+}
+
+.preschool-welcome-image::before {
+    content: "";
+
+    position: absolute;
+    top: -28px;
+    left: -28px;
+    z-index: 0;
+
+    width: 160px;
+    height: 160px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 237, 0, 0.75) 3px,
+            transparent 4px
+        );
+
+    background-size: 18px 18px;
+
+    opacity: 0.55;
+}
+
+.preschool-welcome-image::after {
+    content: "";
+
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    z-index: 0;
+
+    width: 190px;
+    height: 190px;
+
+    background: rgba(35, 55, 115, 0.08);
+    border-radius: 50%;
+}
+
+.preschool-welcome-image img {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+
+    width: 100%;
+    height: 530px;
+
+    object-fit: cover;
+
+    border-radius: 35px 90px 35px 35px;
+
+    box-shadow:
+        0 25px 60px rgba(35, 55, 115, 0.18);
+}
+
+.preschool-image-badge {
+    position: absolute;
+    right: -35px;
+    bottom: 35px;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    max-width: 270px;
+    padding: 18px 22px;
+
+    color: #ffffff;
+    background: #233773;
+
+    border: 5px solid #ffffff;
+    border-radius: 18px;
+
+    box-shadow:
+        0 16px 35px rgba(35, 55, 115, 0.22);
+}
+
+.preschool-image-badge i {
+    color: #ffed00;
+    font-size: 1.8rem;
+}
+
+.preschool-image-badge span {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.preschool-welcome-content h2 {
+    margin: 14px 0 24px;
+
+    color: #17265a;
+
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    line-height: 1.2;
+}
+
+.preschool-welcome-content > p {
+
+    margin-bottom: 17px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    line-height: 1.9;
+
+    color: #4f5d73;
+
+}
+
+.preschool-welcome-points {
+    display: grid;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.preschool-welcome-point {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 14px 16px;
+
+    background: #ffffff;
+    border: 1px solid rgba(35, 55, 115, 0.08);
+    border-radius: 13px;
+
+    box-shadow:
+        0 8px 24px rgba(35, 55, 115, 0.06);
+}
+
+.preschool-welcome-point i {
+    flex-shrink: 0;
+
+    color: #233773;
+
+    font-size: 1.15rem;
+}
+
+.preschool-welcome-point span {
+    color: #344054;
+
+    font-size: 0.94rem;
+    font-weight: 500;
+}
+
+
+/* ==========================================================
+   FORMACIÓN INTEGRAL
+========================================================== */
+
+.preschool-development {
+    position: relative;
+
+    padding: 110px 0;
+
+    background: #eef3ff;
+    overflow: hidden;
+}
+
+.preschool-development::before {
+    content: "";
+
+    position: absolute;
+    top: -120px;
+    right: -90px;
+
+    width: 330px;
+    height: 330px;
+
+    background: rgba(255, 237, 0, 0.18);
+    border-radius: 50%;
+}
+
+.preschool-development::after {
+    content: "";
+
+    position: absolute;
+    bottom: -160px;
+    left: -120px;
+
+    width: 360px;
+    height: 360px;
+
+    border: 60px solid rgba(35, 55, 115, 0.05);
+    border-radius: 50%;
+}
+
+.preschool-development .container {
+    position: relative;
+    z-index: 1;
+}
+
+.preschool-development .section-heading {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.preschool-development .section-label {
+    font-weight: 700;
+}
+
+.preschool-development-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+    margin-top: 55px;
+}
+
+.preschool-development-card {
+    position: relative;
+
+    padding: 35px 28px;
+
+    background: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 25px;
+
+    box-shadow:
+        0 12px 35px rgba(35, 55, 115, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.preschool-development-card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(35, 55, 115, 0.14);
+
+    box-shadow:
+        0 22px 45px rgba(35, 55, 115, 0.14);
+}
+
+.preschool-card-icon {
+    display: grid;
+    place-items: center;
+
+    width: 66px;
+    height: 66px;
+    margin-bottom: 25px;
+
+    color: #233773;
+    background: rgba(255, 237, 0, 0.35);
+
+    border-radius: 21px;
+
+    font-size: 1.75rem;
+
+    transition:
+        transform 0.3s ease,
+        border-radius 0.3s ease;
+}
+
+.preschool-development-card:hover
+.preschool-card-icon {
+    transform: rotate(-5deg) scale(1.08);
+    border-radius: 50%;
+}
+
+.preschool-development-card:nth-child(2)
+.preschool-card-icon {
+    color: #ffffff;
+    background: #233773;
+}
+
+.preschool-development-card:nth-child(3)
+.preschool-card-icon {
+    color: #ffffff;
+    background: #e11b14;
+}
+
+.preschool-development-card:nth-child(4)
+.preschool-card-icon {
+    color: #233773;
+    background: #ffed00;
+}
+
+.preschool-development-card h3 {
+    margin-bottom: 13px;
+
+    color: #17265a;
+
+    font-size: 1.15rem;
+
+    font-weight:600;
+}
+
+.preschool-development-card p {
+
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    line-height: 1.9;
+
+    color: #4f5d73;
+
+}
+
+
+/* ==========================================================
+   PRIMEROS APRENDIZAJES
+========================================================== */
+
+.preschool-learning {
+    padding: 120px 0;
+
+    background: #ffffff;
+}
+
+.preschool-learning .section-label {
+    font-weight: 700;
+}
+
+.preschool-learning-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    align-items: center;
+    gap: 95px;
+}
+
+.preschool-learning-content h2 {
+    margin: 14px 0 24px;
+
+    color: #17265a;
+
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    line-height: 1.2;
+}
+
+.preschool-learning-content > p {
+
+    margin-bottom: 35px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    line-height: 1.9;
+
+    color: #4f5d73;
+
+}
+
+.preschool-learning-list {
+    display: grid;
+    gap: 18px;
+}
+
+.preschool-learning-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding: 23px;
+
+    background: #f8faff;
+    border: 1px solid rgba(35, 55, 115, 0.08);
+    border-radius: 18px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.preschool-learning-item:hover {
+    transform: translateX(8px);
+
+    background: #ffffff;
+    border-color: rgba(35, 55, 115, 0.18);
+}
+
+.preschool-learning-number {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+
+    width: 48px;
+    height: 48px;
+
+    color: #233773;
+    background: #ffed00;
+
+    border-radius: 14px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 800;
+}
+
+.preschool-learning-item:nth-child(2)
+.preschool-learning-number {
+    color: #ffffff;
+    background: #233773;
+}
+
+.preschool-learning-item:nth-child(3)
+.preschool-learning-number {
+    color: #ffffff;
+    background: #e11b14;
+}
+
+.preschool-learning-item h3 {
+    margin-bottom: 6px;
+
+    color: #17265a;
+
+    font-size: 1.05rem;
+
+    font-weight:600;
+}
+
+.preschool-learning-item p {
+
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: .97rem;
+
+    font-weight: 500;
+
+    line-height: 1.8;
+
+    color: #4f5d73;
+
+}
+
+
+/* ==========================================================
+   VISUAL DE APRENDIZAJE
+========================================================== */
+
+.preschool-learning-visual {
+    position: relative;
+
+    display: grid;
+    place-items: center;
+
+    min-height: 520px;
+}
+
+.preschool-learning-visual::before {
+    content: "";
+
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    background: rgba(35, 55, 115, 0.07);
+    border-radius: 50%;
+}
+
+.preschool-learning-visual::after {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border: 2px dashed rgba(35, 55, 115, 0.2);
+    border-radius: 50%;
+
+    animation: preschool-rotate 25s linear infinite;
+}
+
+.preschool-visual-main {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 280px;
+    height: 280px;
+    padding: 40px;
+
+    color: #ffffff;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #2f4a98,
+            #182b6b
+        );
+
+    border:none;
+    border-radius: 50%;
+
+    box-shadow:
+        0 25px 60px rgba(35, 55, 115,.28);
+}
+
+.preschool-visual-main i {
+    margin-bottom: 18px;
+
+    color: #ffed00;
+
+    font-size: 4rem;
+}
+
+.preschool-visual-main h3 {
+    margin-bottom: 10px;
+
+    color: #ffffff;
+
+    font-size: 1.35rem;
+}
+
+.preschool-visual-main p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 0.88rem;
+    line-height: 1.65;
+}
+
+.preschool-visual-decoration {
+    position: absolute;
+    z-index: 3;
+
+    display: grid;
+    place-items: center;
+
+    border: 7px solid #ffffff;
+    border-radius: 50%;
+
+    box-shadow:
+        0 12px 30px rgba(35, 55, 115, 0.18);
+
+    animation: preschool-float 4s ease-in-out infinite;
+}
+
+.preschool-visual-decoration i {
+    font-size: 1.4rem;
+}
+
+.decoration-one {
+    top: 55px;
+    right: 35px;
+
+    width: 78px;
+    height: 78px;
+
+    color: #233773;
+    background: #ffed00;
+}
+
+.decoration-two {
+    bottom: 70px;
+    left: 20px;
+
+    width: 88px;
+    height: 88px;
+
+    color: #ffffff;
+    background: #e11b14;
+
+    animation-delay: 0.8s;
+}
+
+.decoration-three {
+    top: 110px;
+    left: 35px;
+
+    width: 62px;
+    height: 62px;
+
+    color: #ffffff;
+    background: #233773;
+
+    animation-delay: 1.5s;
+}
+
+
+/* ==========================================================
+   AMBIENTE SEGURO
+========================================================== */
+
+.preschool-environment {
+    padding: 110px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #16285f 0%,
+            #233773 60%,
+            #304b99 100%
+        );
+}
+
+.preschool-environment .section-label {
+    color: #ffed00;
+    font-weight: 700;
+}
+
+.preschool-environment .section-heading h2 {
+    color: #ffffff;
+}
+
+.preschool-environment .section-heading p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.preschool-environment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    margin-top: 55px;
+}
+
+.preschool-environment-card {
+    padding: 38px 30px;
+
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 24px;
+
+    backdrop-filter: blur(10px);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.preschool-environment-card:hover {
+    transform: translateY(-9px);
+
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 237, 0, 0.45);
+}
+
+.preschool-environment-card > i {
+    display: grid;
+    place-items: center;
+
+    width: 68px;
+    height: 68px;
+    margin-bottom: 25px;
+
+    color: #233773;
+    background: #ffed00;
+
+    border-radius: 20px;
+
+    font-size: 1.75rem;
+}
+
+.preschool-environment-card h3 {
+    margin-bottom: 13px;
+
+    color: #ffffff;
+
+    font-size: 1.2rem;
+
+    font-weight:600;
+}
+
+.preschool-environment-card p {
+
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    line-height: 1.9;
+
+    color: rgba(255,255,255,.84);
+
+}
+
+
+/* ==========================================================
+   CTA PREESCOLAR
+========================================================== */
+
+.preschool-cta {
+    padding: 95px 0;
+
+    background:#eef3ff;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.preschool-cta::before{
+
+content:"";
+
+position:absolute;
+
+width:420px;
+height:420px;
+
+border-radius:50%;
+
+background:rgba(35,55,115,.06);
+
+top:-180px;
+left:-130px;
+
+}
+
+.preschool-cta::after{
+
+content:"";
+
+position:absolute;
+
+width:340px;
+height:340px;
+
+border-radius:50%;
+
+background:rgba(225,27,20,.06);
+
+bottom:-150px;
+right:-90px;
+
+}
+
+.preschool-cta-content {
+    
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+
+    padding: 10px 0;
+
+}
+    
+.preschool-cta-content::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:90px;
+    height:90px;
+
+    background:rgba(255,237,0,.20);
+
+    border-radius:50%;
+
+    top:-20px;
+    right:180px;
+
+}
+
+.preschool-cta-content::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:18px;
+    height:18px;
+
+    background:#E11B14;
+
+    border-radius:50%;
+
+    left:40px;
+    bottom:-15px;
+
+    opacity:.35;
+
+}    
+
+.preschool-cta-label {
+    display: inline-block;
+
+    margin-bottom: 13px;
+
+    color: #233773;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.preschool-cta-content h2 {
+    max-width: 750px;
+    margin-bottom: 16px;
+
+    color: #17265a;
+
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    line-height: 1.2;
+}
+
+.preschool-cta-content p {
+
+    max-width: 700px;
+
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    line-height: 1.9;
+
+    color: #4f5d73;
+
+}
+
+.preschool-cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 12px;
+
+    min-width: 235px;
+    padding: 17px 25px;
+
+    color: #ffffff;
+    background: #233773;
+    border: 2px solid #233773;
+}
+
+.preschool-cta-button:hover {
+    color: #233773;
+    background: transparent;
+}
+
+.preschool-cta-button i {
+    transition: transform 0.3s ease;
+}
+
+.preschool-cta-button:hover i {
+    transform: translateX(6px);
+}
+
+
+/* ==========================================================
+   ANIMACIONES PREESCOLAR
+========================================================== */
+
+@keyframes preschool-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-13px);
+    }
+
+}
+
+@keyframes preschool-rotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE PREESCOLAR
+========================================================== */
+
+@media (max-width: 1100px) {
+
+    .preschool-highlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .preschool-development-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .preschool-welcome-grid,
+    .preschool-learning-grid {
+        gap: 55px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .preschool-hero {
+        min-height: 620px;
+
+        background-position: 62% center;
+    }
+
+    .preschool-highlights {
+        margin-top: -45px;
+    }
+
+    .preschool-welcome-grid,
+    .preschool-learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .preschool-welcome-image {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .preschool-welcome-content {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .preschool-learning-visual {
+        min-height: 500px;
+    }
+
+    .preschool-environment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .preschool-cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .preschool-hero {
+        min-height: 600px;
+
+        background-position: 68% center;
+    }
+
+    .preschool-hero .internal-hero-content {
+        padding-top: 40px;
+    }
+
+    .preschool-hero-label {
+        font-size: 0.7rem;
+    }
+
+    .preschool-hero h1 {
+        font-size: 2.35rem;
+    }
+
+    .preschool-highlights {
+        margin-top: 0;
+        padding-top: 35px;
+    }
+
+    .preschool-highlight-grid,
+    .preschool-development-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .preschool-highlight {
+        min-height: auto;
+    }
+
+    .preschool-welcome,
+    .preschool-development,
+    .preschool-learning,
+    .preschool-environment {
+        padding: 80px 0;
+    }
+
+    .preschool-welcome-image,
+    .preschool-welcome-image img {
+        min-height: 390px;
+        height: 390px;
+    }
+
+    .preschool-welcome-image img {
+        border-radius: 25px 60px 25px 25px;
+    }
+
+    .preschool-image-badge {
+        right: 15px;
+        bottom: 18px;
+
+        max-width: 240px;
+    }
+
+    .preschool-learning-visual {
+        min-height: 410px;
+    }
+
+    .preschool-learning-visual::before {
+        width: 330px;
+        height: 330px;
+    }
+
+    .preschool-learning-visual::after {
+        width: 285px;
+        height: 285px;
+    }
+
+    .preschool-visual-main {
+        width: 235px;
+        height: 235px;
+        padding: 30px;
+
+        border-width: 9px;
+    }
+
+    .preschool-visual-main i {
+        font-size: 3.1rem;
+    }
+
+    .decoration-one {
+        top: 35px;
+        right: 5px;
+
+        width: 65px;
+        height: 65px;
+    }
+
+    .decoration-two {
+        bottom: 35px;
+        left: 0;
+
+        width: 72px;
+        height: 72px;
+    }
+
+    .decoration-three {
+        top: 80px;
+        left: 0;
+
+        width: 53px;
+        height: 53px;
+    }
+
+    .preschool-cta {
+        padding: 75px 0;
+    }
+
+    .preschool-cta-button {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .preschool-learning-visual::before {
+        width: 290px;
+        height: 290px;
+    }
+
+    .preschool-learning-visual::after {
+        width: 250px;
+        height: 250px;
+    }
+
+    .preschool-visual-main {
+        width: 215px;
+        height: 215px;
+    }
+
+    .preschool-visual-main p {
+        display: none;
+    }
+
+
+}
