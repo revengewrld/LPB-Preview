@@ -12123,3 +12123,1110 @@ AJUSTES FINALES — EXPERIENCIAS LPB
         #FFED00
     );
 }
+
+/* =====================================================
+   EDUCACIÓN MEDIA
+   Color principal: verde oscuro
+===================================================== */
+
+:root{
+    --media-green:#237A4B;
+    --media-green-dark:#165C38;
+    --media-green-soft:#EAF6EF;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.media-hero{
+    position:relative;
+    min-height:620px;
+
+    display:flex;
+    align-items:center;
+
+    padding:110px 8% 90px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(20,38,82,.97) 0%,
+            rgba(35,55,115,.90) 38%,
+            rgba(35,55,115,.62) 67%,
+            rgba(22,92,56,.10) 100%
+        ),
+        url("img/educacion-media.jpeg") center 42% / cover no-repeat;
+
+    overflow:hidden;
+}
+
+.media-hero-content{
+    position:relative;
+    z-index:2;
+    max-width:760px;
+}
+
+.media-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+
+    margin-bottom:24px;
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    color:#fff;
+    background:rgba(35,55,115,.78);
+    border:1px solid rgba(255,255,255,.25);
+
+    font-size:.78rem;
+    font-weight:800;
+    letter-spacing:1.4px;
+
+    backdrop-filter:blur(8px);
+}
+
+.media-tag::before{
+    content:"";
+
+    width:8px;
+    height:8px;
+
+    flex-shrink:0;
+
+    position:relative;
+    top:0px;
+
+    border-radius:50%;
+
+    background:#4DB978;
+
+    box-shadow:
+        0 0 0 4px rgba(77,185,120,.14),
+        0 0 10px rgba(77,185,120,.55);
+}
+
+.media-hero h1{
+    max-width:740px;
+
+    margin:0 0 24px;
+
+    color:#fff;
+
+    font-size:clamp(2.7rem,4.4vw,4.5rem);
+    line-height:1.04;
+    letter-spacing:-2px;
+}
+
+.media-hero p{
+    max-width:650px;
+    margin-bottom:34px;
+
+    color:rgba(255,255,255,.9);
+
+    font-size:1.08rem;
+    line-height:1.8;
+}
+
+.media-hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.media-intro{
+    max-width:1250px;
+    margin:auto;
+    padding:110px 6%;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:80px;
+
+    background:
+        radial-gradient(
+            circle at 95% 15%,
+            rgba(35,122,75,.05),
+            transparent 28%
+        );
+}
+
+.media-intro-text h2{
+    margin:14px 0 24px;
+
+    font-size:clamp(2rem,3.4vw,3.3rem);
+    line-height:1.12;
+}
+
+.media-intro-text p{
+    margin-bottom:18px;
+
+    color:#5e6673;
+    line-height:1.85;
+}
+
+.media-intro-image{
+    position:relative;
+}
+
+.media-intro-image img{
+    width:100%;
+    height:540px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:0 30px 70px rgba(26,44,78,.15);
+}
+
+.media-image-detail{
+    position:absolute;
+
+    left:30px;
+    right:30px;
+    bottom:30px;
+
+    display:flex;
+    align-items:center;
+    gap:16px;
+
+    padding:20px 22px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.93);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+    backdrop-filter:blur(10px);
+}
+
+.media-image-detail i{
+    width:48px;
+    height:48px;
+
+    display:grid;
+    place-items:center;
+
+    flex:0 0 48px;
+
+    border-radius:14px;
+
+    color:#fff;
+    background:var(--media-green);
+
+    font-size:1.25rem;
+}
+
+.media-image-detail strong,
+.media-image-detail span{
+    display:block;
+}
+
+.media-image-detail strong{
+    margin-bottom:3px;
+    color:var(--media-green-dark);
+}
+
+.media-image-detail span{
+    color:#6c7480;
+    font-size:.9rem;
+}
+
+
+/* =========================
+   ENCABEZADOS
+========================= */
+
+.media-section-heading{
+    max-width:780px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.media-section-heading h2{
+    margin:14px 0 20px;
+
+    font-size:clamp(2rem,3.4vw,3.2rem);
+    line-height:1.15;
+}
+
+.media-section-heading p{
+    color:#67707c;
+    line-height:1.8;
+}
+
+
+/* =========================
+   PROPUESTA
+========================= */
+
+.media-proposal{
+    padding:85px 6%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #F7F9FB 0%,
+            #F2F6F4 50%,
+            #F7F9FB 100%
+        );
+}
+
+.media-proposal-grid{
+    max-width:1250px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.media-card{
+    position:relative;
+    overflow:hidden;
+
+    padding:34px;
+
+    border-radius:24px;
+
+    background:#fff;
+    border:1px solid rgba(26,55,94,.07);
+
+    box-shadow:0 15px 38px rgba(32,47,78,.06);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.media-card::before{
+    content:"";
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:4px;
+
+    background:var(--media-green);
+
+    transform:scaleX(0);
+    transform-origin:left;
+
+    transition:transform .35s ease;
+}
+
+.media-card:hover{
+    transform:translateY(-8px);
+
+    border-color:rgba(35,122,75,.15);
+
+    box-shadow:0 22px 50px rgba(35,80,60,.12);
+}
+
+.media-card:hover::before{
+    transform:scaleX(1);
+}
+
+.media-card-icon{
+    width:58px;
+    height:58px;
+
+    display:grid;
+    place-items:center;
+
+    margin-bottom:24px;
+
+    border-radius:17px;
+
+    background:var(--media-green-soft);
+    color:var(--media-green);
+
+    font-size:1.45rem;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+.media-card:hover .media-card-icon{
+    transform:translateY(-3px) scale(1.07);
+}
+
+/* Algunos acentos secundarios para no saturar de verde */
+
+/* Colores individuales para cada tarjeta */
+
+/* 1 - Fortalecimiento académico | Verde Media */
+.media-card:nth-child(1) .media-card-icon{
+    background:#EAF6EF;
+    color:#237A4B;
+}
+
+.media-card:nth-child(1)::before{
+    background:#237A4B;
+}
+
+
+/* 2 - Pensamiento crítico | Azul LPB */
+.media-card:nth-child(2) .media-card-icon{
+    background:#EEF1FA;
+    color:#233773;
+}
+
+.media-card:nth-child(2)::before{
+    background:#233773;
+}
+
+
+/* 3 - Inglés | Amarillo LPB */
+.media-card:nth-child(3) .media-card-icon{
+    background:#FFF9D6;
+    color:#B78700;
+}
+
+.media-card:nth-child(3)::before{
+    background:#FFCB20;
+}
+
+
+/* 4 - Tecnología | Rojo institucional */
+.media-card:nth-child(4) .media-card-icon{
+    background:#FBEAEC;
+    color:#9F1D2D;
+}
+
+.media-card:nth-child(4)::before{
+    background:#9F1D2D;
+}
+
+/* 5 - Investigación | Azul claro */
+.media-card:nth-child(5) .media-card-icon{
+    background:#E8F4FA;
+    color:#24749A;
+}
+
+.media-card:nth-child(5)::before{
+    background:#24749A;
+}
+
+
+/* 6 - Autonomía y liderazgo | Naranja */
+.media-card:nth-child(6) .media-card-icon{
+    background:#FFF0E3;
+    color:#C56722;
+}
+
+.media-card:nth-child(6)::before{
+    background:#C56722;
+}
+
+.media-card h3{
+    margin-bottom:12px;
+
+    color:#243047;
+    font-size:1.25rem;
+}
+
+.media-card p{
+    margin:0;
+
+    color:#68717d;
+    line-height:1.75;
+}
+
+
+/* =========================
+   SABER 11
+========================= */
+
+.media-saber{
+    max-width:1250px;
+    margin:auto;
+    padding:110px 6%;
+
+    display:grid;
+    grid-template-columns:1.25fr .75fr;
+    align-items:center;
+    gap:70px;
+}
+
+.media-section-label{
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    color:var(--media-green);
+
+    font-size:.8rem;
+    font-weight:800;
+    letter-spacing:1.6px;
+}
+
+.media-saber-content h2{
+    margin-bottom:22px;
+
+    font-size:clamp(2rem,3.4vw,3.25rem);
+    line-height:1.12;
+}
+
+.media-saber-content > p{
+    margin-bottom:26px;
+
+    color:#626c78;
+    line-height:1.85;
+}
+
+.media-saber-list{
+    display:grid;
+    gap:13px;
+}
+
+.media-saber-list div{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+
+    padding:10px 12px;
+    margin-left:-12px;
+
+    border-radius:13px;
+
+    transition:
+        transform .25s ease,
+        background .25s ease;
+}
+
+.media-saber-list div:hover{
+    transform:translateX(6px);
+    background:#F2F7F4;
+}
+
+.media-saber-list i{
+    margin-top:2px;
+
+    color:var(--media-green);
+
+    font-size:1.1rem;
+}
+
+.media-saber-card{
+    position:relative;
+    overflow:hidden;
+
+    padding:38px;
+
+    border-radius:30px;
+
+    color:#fff;
+
+    background:
+        linear-gradient(
+            145deg,
+            #172650,
+            #233773 65%,
+            #3156A3
+        );
+
+    box-shadow:0 28px 65px rgba(35,55,115,.20);
+}
+
+.media-saber-card::after{
+    content:"";
+
+    position:absolute;
+    right:-70px;
+    bottom:-90px;
+
+    width:210px;
+    height:210px;
+
+    border-radius:50%;
+
+    background:rgba(255,237,0,.12);
+}
+
+.media-saber-icon{
+    width:62px;
+    height:62px;
+
+    display:grid;
+    place-items:center;
+
+    margin-bottom:24px;
+
+    border-radius:18px;
+
+    color:#233773;
+    background:#FFED00;
+
+    font-size:1.6rem;
+}
+
+.media-saber-card > span{
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#CFEAD9;
+
+    font-size:.78rem;
+    font-weight:800;
+    letter-spacing:1.4px;
+}
+
+.media-saber-card h3{
+    position:relative;
+    z-index:2;
+
+    margin-bottom:14px;
+
+    font-size:1.6rem;
+    line-height:1.3;
+}
+
+.media-saber-card p{
+    position:relative;
+    z-index:2;
+
+    margin:0;
+
+    color:rgba(255,255,255,.84);
+    line-height:1.75;
+}
+
+
+/* =========================
+   VOCACIÓN Y PROYECTO DE VIDA
+========================= */
+
+.media-vocation{
+    padding:110px 6%;
+
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    align-items:center;
+    gap:80px;
+
+    background:#F5F8F6;
+}
+
+.media-vocation-image img{
+    width:100%;
+    height:650px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:0 30px 70px rgba(26,44,78,.13);
+}
+
+.media-vocation-content h2{
+    margin:14px 0 22px;
+
+    font-size:clamp(2rem,3.3vw,3.2rem);
+    line-height:1.12;
+}
+
+.media-vocation-content > p{
+    margin-bottom:28px;
+
+    color:#626c78;
+    line-height:1.8;
+}
+
+.media-vocation-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.media-experiences-grid article:nth-child(4) i{
+    background:#FBEAEC;
+    color:#9F1D2D;
+}
+
+.media-vocation-grid > div{
+    padding:20px;
+
+    border-radius:18px;
+
+    background:#fff;
+    border:1px solid #E3E9E5;
+
+    transition:
+        transform .28s ease,
+        box-shadow .28s ease,
+        border-color .28s ease;
+}
+
+.media-vocation-grid > div:hover{
+    transform:translateY(-5px);
+
+    border-color:rgba(35,122,75,.18);
+
+    box-shadow:0 16px 35px rgba(35,80,60,.09);
+}
+
+.media-vocation-grid i{
+    display:inline-grid;
+    place-items:center;
+
+    width:42px;
+    height:42px;
+
+    margin-bottom:12px;
+
+    border-radius:12px;
+
+    color:var(--media-green);
+    background:var(--media-green-soft);
+}
+
+.media-vocation-grid > div:nth-child(2) i,
+.media-vocation-grid > div:nth-child(4) i{
+    color:#233773;
+    background:#EEF1FA;
+}
+
+.media-vocation-grid h3{
+    margin-bottom:7px;
+
+    font-size:1rem;
+    color:#243047;
+}
+
+.media-vocation-grid p{
+    margin:0;
+
+    color:#68717d;
+    line-height:1.6;
+    font-size:.9rem;
+}
+
+
+/* =========================
+   EXPERIENCIAS
+========================= */
+
+.media-experiences{
+    padding:110px 6%;
+}
+
+.media-experiences-grid{
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.media-experiences-grid article{
+    padding:30px 25px;
+
+    border-radius:22px;
+
+    background:#fff;
+    border:1px solid #E4E9EF;
+
+    box-shadow:0 12px 30px rgba(32,47,78,.05);
+
+    transition:
+        transform .28s ease,
+        box-shadow .28s ease;
+}
+
+.media-experiences-grid article:hover{
+    transform:translateY(-7px);
+
+    box-shadow:0 22px 45px rgba(32,47,78,.1);
+}
+
+.media-experiences-grid i{
+    width:50px;
+    height:50px;
+
+    display:grid;
+    place-items:center;
+
+    margin-bottom:20px;
+
+    border-radius:15px;
+
+    color:var(--media-green);
+    background:var(--media-green-soft);
+
+    font-size:1.3rem;
+}
+
+.media-experiences-grid article:nth-child(2) i{
+    color:#233773;
+    background:#EEF1FA;
+}
+
+.media-experiences-grid article:nth-child(3) i{
+    color:#B78700;
+    background:#FFFBD1;
+}
+
+.media-experiences-grid h3{
+    margin-bottom:9px;
+
+    font-size:1.08rem;
+    color:#243047;
+}
+
+.media-experiences-grid p{
+    margin:0;
+
+    color:#68717d;
+    line-height:1.65;
+    font-size:.92rem;
+}
+
+.media-experiences-action{
+    margin-top:34px;
+    text-align:center;
+}
+
+
+/* =========================
+   TU PRÓXIMO PASO
+========================= */
+
+.media-next{
+    padding:85px 6%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #F7F9FC 0%,
+            #F1F4F8 100%
+        );
+}
+
+.media-next-grid{
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    align-items:start;
+    gap:24px;
+}
+
+.media-next-card{
+    position:relative;
+
+    min-height:390px;
+
+    padding:30px;
+
+    border-radius:26px;
+
+    background:#fff;
+    border:1px solid #E0E7E2;
+
+    box-shadow:0 18px 42px rgba(33,72,52,.07);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.media-next-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 55px rgba(33,72,52,.13);
+}
+
+/* Escalonado, distinto a Secundaria */
+
+.media-next-11{
+    margin-top:28px;
+}
+
+.media-next-future{
+    margin-top:56px;
+
+    color:#fff;
+
+    background:
+        linear-gradient(
+            145deg,
+            #172650,
+            #233773
+        );
+
+    border-color:transparent;
+}
+
+.media-next-grade{
+    display:inline-block;
+
+    margin-bottom:22px;
+
+    color:var(--media-green);
+
+    font-size:.82rem;
+    font-weight:900;
+    letter-spacing:1.3px;
+}
+
+.media-next-future .media-next-grade{
+    color:#CDE9D7;
+}
+
+.media-next-icon{
+    width:58px;
+    height:58px;
+
+    display:grid;
+    place-items:center;
+
+    margin-bottom:22px;
+
+    border-radius:17px;
+
+    color:#fff;
+    background:var(--media-green);
+
+    font-size:1.4rem;
+}
+
+.media-next-11 .media-next-icon{
+    color:#233773;
+    background:#FFED00;
+}
+
+.media-next-future .media-next-icon{
+    color:#233773;
+    background:#FFED00;
+}
+
+.media-next-step{
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#7E8995;
+
+    font-size:.74rem;
+    font-weight:900;
+    letter-spacing:1.5px;
+}
+
+.media-next-future .media-next-step{
+    color:#BFE0CB;
+}
+
+.media-next-card h3{
+    margin-bottom:14px;
+
+    color:#243047;
+
+    font-size:1.35rem;
+    line-height:1.35;
+}
+
+.media-next-card p{
+    margin:0;
+
+    color:#68717d;
+    line-height:1.7;
+}
+
+.media-next-future h3{
+    color:#fff;
+}
+
+.media-next-future p{
+    color:rgba(255,255,255,.82);
+}
+
+
+/* =========================
+   CTA FINAL
+========================= */
+
+.media-cta{
+    max-width:1250px;
+    margin:0 auto;
+
+    padding:65px 6%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:60px;
+}
+
+.media-cta > div:first-child{
+    max-width:720px;
+}
+
+.media-cta .section-tag{
+    color:var(--media-green);
+    background:var(--media-green-soft);
+
+    border:1px solid rgba(35,122,75,.1);
+}
+
+.media-cta h2{
+    margin:14px 0 16px;
+
+    color:#243047;
+
+    font-size:clamp(2rem,3vw,3rem);
+    line-height:1.12;
+}
+
+.media-cta p{
+    max-width:650px;
+
+    color:#68717d;
+    line-height:1.75;
+}
+
+.media-cta-buttons{
+    display:flex;
+    flex-direction:column;
+
+    min-width:225px;
+    gap:12px;
+}
+
+.media-home-button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:50px;
+    padding:12px 20px;
+
+    border-radius:999px;
+
+    color:#233773;
+    background:#fff;
+    border:1px solid #d6dce5;
+
+    text-decoration:none;
+    font-weight:700;
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.media-home-button:hover{
+    transform:translateY(-3px);
+
+    background:#EEF1FA;
+    border-color:rgba(35,55,115,.18);
+
+    box-shadow:0 10px 25px rgba(35,55,115,.08);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+    .media-intro,
+    .media-saber,
+    .media-vocation{
+        grid-template-columns:1fr;
+    }
+
+    .media-proposal-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .media-experiences-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .media-next-grid{
+        grid-template-columns:1fr;
+    }
+
+    .media-next-11,
+    .media-next-future{
+        margin-top:0;
+    }
+}
+
+@media(max-width:700px){
+
+    .media-hero{
+        min-height:620px;
+        padding:120px 6% 70px;
+    }
+
+    .media-hero h1{
+        letter-spacing:-1px;
+    }
+
+    .media-intro,
+    .media-proposal,
+    .media-saber,
+    .media-vocation,
+    .media-experiences,
+    .media-next{
+        padding-top:75px;
+        padding-bottom:75px;
+    }
+
+    .media-intro-image img,
+    .media-vocation-image img{
+        height:400px;
+    }
+
+    .media-image-detail{
+        position:relative;
+
+        left:auto;
+        right:auto;
+        bottom:auto;
+
+        margin-top:15px;
+    }
+
+    .media-proposal-grid,
+    .media-experiences-grid,
+    .media-vocation-grid{
+        grid-template-columns:1fr;
+    }
+
+    .media-cta{
+        flex-direction:column;
+        align-items:flex-start;
+
+        padding:75px 7%;
+    }
+
+    .media-cta-buttons{
+        width:100%;
+    }
+}
