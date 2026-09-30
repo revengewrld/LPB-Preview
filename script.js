@@ -214,6 +214,33 @@ window.addEventListener(
 
 animateCounters();
 
+// Formulario de contacto: abre WhatsApp con los datos diligenciados.
+const contactWhatsappForm = document.querySelector("#contact-whatsapp-form");
+
+contactWhatsappForm?.addEventListener("submit", event => {
+  event.preventDefault();
+
+  const formData = new FormData(contactWhatsappForm);
+  const nombre = String(formData.get("Nombre") || "").trim();
+  const correo = String(formData.get("email") || "").trim();
+  const asunto = String(formData.get("Asunto") || "").trim();
+  const mensaje = String(formData.get("Mensaje") || "").trim();
+
+  const texto = [
+    "Buenas, necesito más información sobre el colegio.",
+    "",
+    `Nombre: ${nombre}`,
+    `Correo: ${correo}`,
+    `Asunto: ${asunto}`,
+    `Mensaje: ${mensaje}`
+  ].join("\n");
+
+  const whatsappUrl =
+    `https://wa.me/573102539151?text=${encodeURIComponent(texto)}`;
+
+  window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+});
+
 // Efecto 3D en las tarjetas
 if (
   window

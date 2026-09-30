@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Experiencias LPB | Liceo Psicopedagógico Bolivia</title>
+  <meta name="description" content="Conoce las experiencias académicas, deportivas, artísticas, culturales y tecnológicas del Liceo Psicopedagógico Bolivia.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="../index.html#inicio" class="logo">
+        <img src="../img/logo.png" alt="Logo LPB">
+        <div>
+          <h2>LPB</h2>
+          <span>Liceo Psicopedagógico Bolivia</span>
+        </div>
+      </a>
+
+      <ul class="menu">
+        <li><a href="../index.html#inicio">Inicio</a></li>
+        <li><a href="../index.html#nosotros">Nosotros</a></li>
+        <li><a href="../index.html#niveles">Niveles</a></li>
+        <li><a href="../index.html#vida">Vida Escolar</a></li>
+        <li><a href="actividades.html" aria-current="page">Experiencias</a></li>
+        <li><a href="../index.html#contacto">Contacto</a></li>
+      </ul>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <a href="../index.html#contacto" class="btn-nav">Admisiones</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!--=====================================
+    HERO EXPERIENCIAS
+    ======================================-->
+    <section class="activities-hero">
+      <div class="activities-hero-overlay"></div>
+
+      <div class="activities-hero-content">
+        <span class="section-tag">EXPERIENCIAS LPB</span>
+        <h1>Aprender también significa descubrir, crear y compartir.</h1>
+        <p>
+          En el LPB, cada actividad se convierte en una oportunidad para desarrollar
+          talentos, fortalecer habilidades y construir recuerdos significativos
+          dentro y fuera del aula.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#experiencias" class="btn-primary">Explorar experiencias</a>
+          <a href="../index.html#nosotros" class="btn-secondary">Conocer el colegio</a>
+        </div>
+      </div>
+    </section>
+
+    <!--=====================================
+    INTRODUCCIÓN
+    ======================================-->
+    <section class="activities-intro">
+      <div class="activities-intro-content">
+        <span class="section-tag">MÁS ALLÁ DEL AULA</span>
+        <h2>Una formación que permite descubrir nuevas capacidades.</h2>
+        <p>
+          Las experiencias académicas, artísticas, deportivas, culturales y
+          tecnológicas complementan el aprendizaje. Cada espacio está pensado para
+          que los estudiantes fortalezcan su autonomía, su creatividad y su forma
+          de relacionarse con los demás.
+        </p>
+      </div>
+
+      <div class="activities-benefits">
+        <article class="activity-benefit-card">
+          <i class="bi bi-stars"></i>
+          <h3>Descubrir talentos</h3>
+          <p>Oportunidades para explorar intereses y reconocer nuevas capacidades.</p>
+        </article>
+
+        <article class="activity-benefit-card">
+          <i class="bi bi-lightbulb-fill"></i>
+          <h3>Fortalecer habilidades</h3>
+          <p>Experiencias que impulsan la creatividad, la autonomía y el pensamiento crítico.</p>
+        </article>
+
+        <article class="activity-benefit-card">
+          <i class="bi bi-people-fill"></i>
+          <h3>Crear vínculos</h3>
+          <p>Espacios para compartir, colaborar y fortalecer el sentido de comunidad.</p>
+        </article>
+      </div>
+    </section>
+
+    <!--=====================================
+    FILTROS
+    ======================================-->
+    <section class="activities-directory" id="experiencias">
+      <div class="section-title">
+        <h4>EXPLORA NUESTRAS EXPERIENCIAS</h4>
+        <h2>Actividades para aprender de diferentes maneras.</h2>
+        <p>
+          Conoce algunos de los programas, proyectos y espacios que complementan
+          la formación de nuestros estudiantes durante el año escolar.
+        </p>
+      </div>
+
+      <div class="activity-tools">
+        <label class="activity-search" for="activitySearch">
+          <i class="bi bi-search"></i>
+          <input id="activitySearch" type="search" placeholder="Buscar una actividad" autocomplete="off">
+        </label>
+
+        <div class="activity-filters" aria-label="Filtrar actividades por categoría">
+          <button type="button" class="activity-filter active" data-filter="all">Todas</button>
+          <button type="button" class="activity-filter" data-filter="academica">Académicas</button>
+          <button type="button" class="activity-filter" data-filter="tecnologia">Tecnología</button>
+          <button type="button" class="activity-filter" data-filter="arte">Arte y cultura</button>
+          <button type="button" class="activity-filter" data-filter="deportes">Deportes</button>
+          <button type="button" class="activity-filter" data-filter="proyectos">Proyectos</button>
+          <button type="button" class="activity-filter" data-filter="eventos">Salidas y eventos</button>
+        </div>
+      </div>
+    </section>
+
+    <!--=====================================
+    EXPERIENCIAS DESTACADAS
+    ======================================-->
+    <section class="featured-activities">
+      <div class="section-title">
+        <h4>EXPERIENCIAS DESTACADAS</h4>
+        <h2>Momentos que inspiran, enseñan y dejan huella.</h2>
+      </div>
+
+      <div class="featured-activities-grid">
+        <article class="featured-activity-card activity-card" data-category="proyectos tecnologia academica">
+          <img loading="lazy" decoding="async" src="../img/feria-de-ciencia.png" alt="Estudiantes participando en la feria de ciencia e innovación">
+          <div class="featured-activity-content">
+            <span>CIENCIA Y PROYECTOS</span>
+            <h3>Feria de Ciencia e Innovación</h3>
+            <p>Los estudiantes investigan, diseñan y presentan soluciones mediante proyectos prácticos.</p>
+            <small><strong>Fortalece:</strong> creatividad, investigación y solución de problemas.</small>
+          </div>
+        </article>
+
+        <article class="featured-activity-card activity-card" data-category="arte eventos">
+          <img loading="lazy" decoding="async" src="../img/festival-cultural.jpg" alt="Estudiantes participando en el festival cultural">
+          <div class="featured-activity-content">
+            <span>ARTE Y CULTURA</span>
+            <h3>Festival Cultural</h3>
+            <p>Un espacio para compartir talentos mediante la música, la danza, el arte y la expresión.</p>
+            <small><strong>Fortalece:</strong> creatividad, confianza e identidad cultural.</small>
+          </div>
+        </article>
+
+        <article class="featured-activity-card activity-card" data-category="deportes eventos">
+          <img loading="lazy" decoding="async" src="../img/competencias-deportivas.jpg" alt="Estudiantes participando en encuentros deportivos">
+          <div class="featured-activity-content">
+            <span>DEPORTE Y BIENESTAR</span>
+            <h3>Encuentros Deportivos</h3>
+            <p>Actividades que promueven la participación, la disciplina y los hábitos saludables.</p>
+            <small><strong>Fortalece:</strong> trabajo en equipo, constancia y bienestar físico.</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!--=====================================
+    TODAS LAS EXPERIENCIAS
+    ======================================-->
+    <section class="all-activities">
+      <div class="section-title">
+        <h4>TODAS LAS EXPERIENCIAS</h4>
+        <h2>Opciones para diferentes intereses y talentos.</h2>
+      </div>
+
+      <div class="activities-grid" id="activitiesGrid">
+
+        <article class="activity-card" data-category="academica">
+          <img loading="lazy" decoding="async" src="../img/ingles_intensivo.png" alt="Programa de inglés intensivo">
+          <div class="activity-card-content">
+            <span>ACADÉMICA</span>
+            <h3>Inglés Intensivo</h3>
+            <p>Experiencias comunicativas que fortalecen la comprensión y el uso del inglés desde edades tempranas.</p>
+            <small><strong>Fortalece:</strong> comunicación, confianza y comprensión cultural.</small>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="academica">
+          <img loading="lazy" decoding="async" src="../img/lectores-competentes.jpg" alt="Programa de lectores competentes">
+          <div class="activity-card-content">
+            <span>ACADÉMICA</span>
+            <h3>Lectores Competentes</h3>
+            <p>Actividades que desarrollan la comprensión, la argumentación y el gusto por la lectura.</p>
+            <small><strong>Fortalece:</strong> comprensión lectora, análisis y expresión.</small>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="academica proyectos">
+          <img loading="lazy" decoding="async" src="../img/progrentis.jpg" alt="Estudiante desarrollando pensamiento crítico">
+          <div class="activity-card-content">
+            <span>ACADÉMICA</span>
+            <h3>Progrentis y Pensamiento Crítico</h3>
+            <p>Retos que promueven el análisis, la reflexión y la toma de decisiones responsables.</p>
+            <small><strong>Fortalece:</strong> pensamiento crítico, autonomía y resolución de retos.</small>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="academica eventos">
+          <img loading="lazy" decoding="async" src="../img/vida-escolar.jpg" alt="Estudiantes en una competencia académica">
+          <div class="activity-card-content">
+            <span>ACADÉMICA</span>
+            <h3>Olimpiadas Académicas</h3>
+            <p>Encuentros que motivan a los estudiantes a poner en práctica sus conocimientos y habilidades.</p>
+            <small><strong>Fortalece:</strong> disciplina, razonamiento y confianza.</small>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="tecnologia proyectos">
+          <img loading="lazy" decoding="async" src="../img/robotica.jpg" alt="Estudiantes trabajando en robótica">
+          <div class="activity-card-content">
+            <span>TECNOLOGÍA</span>
+            <h3>Robótica</h3>
+            <p>Los estudiantes diseñan y desarrollan soluciones mediante creatividad, lógica y tecnología.</p>
+            <small><strong>Fortalece:</strong> pensamiento lógico, colaboración e innovación.</small>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="tecnologia academica">
+          <img loading="lazy" decoding="async" src="../img/informatica.jpg" alt="Clase de informática y programación">
+          <div class="activity-card-content">
+            <span>TECNOLOGÍA</span>
+            <h3>Informática y Programación</h3>
+            <p>Espacios para comprender, crear y participar de manera responsable en el mundo digital.</p>
+            <small><strong>Fortalece:</strong> competencias digitales, lógica y creatividad.</small>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="tecnologia proyectos academica">
+  <img loading="lazy"
+       decoding="async"
+       src="../img/tecnoferia.png"
+       alt="Estudiantes participando en la Tecnoferia del LPB">
+
+  <div class="activity-card-content">
+    <span>TECNOLOGÍA</span>
+
+    <h3>Tecnoferia</h3>
+
+    <p>
+      Un espacio para presentar proyectos de tecnología, programación,
+      innovación y soluciones desarrolladas por los estudiantes.
+    </p>
+
+    <small>
+      <strong>Fortalece:</strong>
+      innovación, pensamiento lógico, creatividad y trabajo en equipo.
+    </small>
+  </div>
+</article>
+
+        <article class="activity-card" data-category="arte eventos">
+          <img loading="lazy" decoding="async" src="../img/eventos.jpg" alt="Actividades artísticas y culturales">
+          <div class="activity-card-content">
+            <span>ARTE Y CULTURA</span>
+            <h3>Música y Expresión Artística</h3>
+            <p>Actividades donde los estudiantes desarrollan su sensibilidad, creatividad y capacidad expresiva.</p>
+            <small><strong>Fortalece:</strong> expresión, imaginación y confianza.</small>
+          </div>
+        </article>
+
+<article class="activity-card" data-category="arte eventos academica">
+  <img loading="lazy"
+       decoding="async"
+       src="../img/dia_idioma.png"
+       alt="Celebración del Día del Idioma en el LPB">
+
+  <div class="activity-card-content">
+    <span>ARTE Y CULTURA</span>
+
+    <h3>Día del Idioma</h3>
+
+    <p>
+      Una jornada para celebrar la lectura, la escritura, la expresión oral
+      y la riqueza de nuestra lengua mediante actividades culturales,
+      literarias y creativas.
+    </p>
+
+    <small>
+      <strong>Fortalece:</strong>
+      comunicación, creatividad, expresión y comprensión lectora.
+    </small>
+  </div>
+</article>
+
+        <article class="activity-card" data-category="deportes">
+          <img loading="lazy" decoding="async" src="../img/deportes.jpg" alt="Actividades deportivas del colegio">
+          <div class="activity-card-content">
+            <span>DEPORTES</span>
+            <h3>Escuelas Deportivas</h3>
+            <p>Prácticas y encuentros que promueven la actividad física, la disciplina y la convivencia.</p>
+            <small><strong>Fortalece:</strong> coordinación, trabajo en equipo y hábitos saludables.</small>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="proyectos academica">
+          <img loading="lazy" decoding="async" src="../img/clubes-vocacionales.jpg" alt="Estudiantes participando en clubes vocacionales">
+          <div class="activity-card-content">
+            <span>PROYECTOS</span>
+            <h3>Clubes Vocacionales</h3>
+            <p>Espacios para explorar intereses, reconocer talentos y orientar el proyecto de vida.</p>
+            <small><strong>Fortalece:</strong> autonomía, liderazgo y toma de decisiones.</small>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="eventos proyectos">
+          <img loading="lazy" decoding="async" src="../img/experiencias-inolvidables.jpg" alt="Experiencias significativas de aprendizaje">
+          <div class="activity-card-content">
+            <span>SALIDAS Y EVENTOS</span>
+            <h3>Salidas Pedagógicas</h3>
+            <p>Recorridos y visitas que permiten conectar los conocimientos con contextos reales.</p>
+            <small><strong>Fortalece:</strong> curiosidad, observación y aprendizaje significativo.</small>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="eventos proyectos">
+          <img loading="lazy" decoding="async" src="../img/campus.jpg" alt="Comunidad educativa compartiendo en el campus">
+          <div class="activity-card-content">
+            <span>COMUNIDAD</span>
+            <h3>Convivencias y Liderazgo</h3>
+            <p>Encuentros que fortalecen el respeto, la participación y la construcción de vínculos.</p>
+            <small><strong>Fortalece:</strong> convivencia, empatía y liderazgo.</small>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="eventos arte">
+          <img loading="lazy" decoding="async" src="../img/innovacion.png" alt="Evento institucional del LPB">
+          <div class="activity-card-content">
+            <span>EVENTOS</span>
+            <h3>Celebraciones Institucionales</h3>
+            <p>Momentos para compartir, reconocer logros y fortalecer la identidad de la comunidad educativa.</p>
+            <small><strong>Fortalece:</strong> sentido de pertenencia, participación y convivencia.</small>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="activity-empty-message" id="activityEmptyMessage" hidden>
+        No encontramos actividades con ese nombre o categoría.
+      </p>
+    </section>
+
+    <!--=====================================
+    CTA
+    ======================================-->
+    <section class="admissions-cta" aria-label="Conoce el LPB">
+      <div class="admissions-content">
+        <span class="admissions-tag">CONOCE NUESTRA COMUNIDAD</span>
+        <h2>Cada estudiante tiene talentos por descubrir.</h2>
+        <p>
+          Agenda una visita y conoce los espacios, programas y experiencias que
+          hacen parte de la formación integral del LPB.
+        </p>
+
+        <div class="admissions-benefits">
+          <div><i class="bi bi-calendar2-check-fill"></i><span>Visitas personalizadas</span></div>
+          <div><i class="bi bi-people-fill"></i><span>Acompañamiento familiar</span></div>
+          <div><i class="bi bi-stars"></i><span>Experiencias integrales</span></div>
+        </div>
+      </div>
+
+      <div class="admissions-panel">
+        <div class="admissions-panel-icon"><i class="bi bi-mortarboard-fill"></i></div>
+        <h3>Ven a conocer el Liceo</h3>
+        <p>Recibe información sobre niveles, programas, actividades y proceso de admisión.</p>
+        <a href="../index.html#contacto" class="cta-button">
+          Agendar una visita <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/573102539151?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20experiencias%20del%20LPB" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <span class="whatsapp-icon"><i class="bi bi-whatsapp"></i></span>
+    <span class="whatsapp-text">
+      <strong>¿Necesitas ayuda?</strong>
+      <small>Escríbenos por WhatsApp</small>
+    </span>
+  </a>
+
+  <button class="back-to-top" type="button" aria-label="Volver arriba" title="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="../index.html" class="footer-logo">
+
+                    <img src="../img/logo.png"
+                        alt="Logo del Liceo Psicopedagógico Bolivia">
+
+                    <div>
+
+                        <h2>LPB</h2>
+
+                        <span>Liceo Psicopedagógico Bolivia</span>
+
+                    </div>
+
+                </a>
+
+                <p>
+                    Más de 42 años formando estudiantes íntegros,
+                    críticos y preparados para construir su proyecto de vida.
+                </p>
+
+                <div class="footer-socials">
+
+    <a class="instagram"
+       href="https://www.instagram.com/liceopsicopedagogicobolivia/"
+       target="_blank"
+       rel="noopener"
+       aria-label="Instagram del LPB">
+        <i class="bi bi-instagram"></i>
+    </a>
+
+    <a class="facebook"
+       href="https://www.facebook.com/PsicopedagogicoBolivia/"
+       target="_blank"
+       rel="noopener"
+       aria-label="Facebook del LPB">
+        <i class="bi bi-facebook"></i>
+    </a>
+
+    <a class="youtube"
+       href="https://www.youtube.com/@LiceoPsicopedagogicoBoliviaE"
+       target="_blank"
+       rel="noopener"
+       aria-label="YouTube del LPB">
+        <i class="bi bi-youtube"></i>
+    </a>
+
+                    <a href="https://wa.me/573102539151"
+                        class="whatsapp"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="WhatsApp">
+
+                        <i class="bi bi-whatsapp"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Enlaces rápidos</h3>
+
+                <a href="../index.html">Inicio</a>
+
+                <a href="historia.html">Nuestra Historia</a>
+
+                <a href="pei.html">Proyecto Educativo</a>
+
+                <a href="../index.html#niveles">Niveles educativos</a>
+
+                <a href="../index.html#vida">Vida Escolar</a>
+
+                <a href="../index.html#contacto">Contacto</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Niveles educativos</h3>
+
+                <a href="preescolar.html">Preescolar</a>
+
+                <a href="primaria.html">Primaria</a>
+
+                <a href="secundaria.html">Secundaria</a>
+
+                <a href="media.html">Educación Media</a>
+
+            </div>
+
+            <div class="footer-column footer-contact">
+
+                <h3>Información</h3>
+
+<a href="https://maps.app.goo.gl/JzAwRZgHfxtG99US8"
+   target="_blank"
+   rel="noopener">
+    <i class="bi bi-geo-alt-fill"></i>
+    Calle 81 # 106a-10, Bogotá
+</a>
+
+<a href="mailto:contacto@lpb.edu.co?subject=Consulta%20desde%20la%20p%C3%A1gina%20web%20del%20LPB">
+    <i class="bi bi-envelope-fill"></i>
+    contacto@lpb.edu.co
+</a>
+
+<a href="tel:+573195943774">
+    <i class="bi bi-telephone-fill"></i>
+    +57 319 594 3774
+</a>
+
+                <a href="https://wa.me/573102539151?text=Buenas%2C%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20colegio."
+    class="footer-contact-link"
+    target="_blank"
+    rel="noopener">
+                  
+                    Solicitar información
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-copy">
+
+            <span>
+                © 2026 Liceo Psicopedagógico Bolivia.
+                Todos los derechos reservados.
+            </span>
+
+            <a href="#">
+                Volver al inicio
+            </a>
+
+        </div>
+
+    </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    const filterButtons = document.querySelectorAll('.activity-filter');
+    const activityCards = document.querySelectorAll('.activity-card');
+    const activitySearch = document.getElementById('activitySearch');
+    const emptyMessage = document.getElementById('activityEmptyMessage');
+
+    let activeFilter = 'all';
+
+    function filterActivities() {
+      const searchTerm = activitySearch.value.trim().toLowerCase();
+      let visibleCards = 0;
+
+      activityCards.forEach((card) => {
+        const categories = card.dataset.category || '';
+        const cardText = card.textContent.toLowerCase();
+        const matchesCategory = activeFilter === 'all' || categories.includes(activeFilter);
+        const matchesSearch = !searchTerm || cardText.includes(searchTerm);
+        const shouldShow = matchesCategory && matchesSearch;
+
+        card.hidden = !shouldShow;
+        if (shouldShow) visibleCards += 1;
+      });
+
+      emptyMessage.hidden = visibleCards !== 0;
+    }
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach((item) => item.classList.remove('active'));
+        button.classList.add('active');
+        activeFilter = button.dataset.filter;
+        filterActivities();
+      });
+    });
+
+    activitySearch.addEventListener('input', filterActivities);
+  </script>
+</body>
+
+</html>
