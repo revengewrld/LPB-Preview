@@ -14041,3 +14041,146 @@ a.whatsapp-float:hover{
         grid-column: auto;
     }
 }
+
+/* =========================================
+   SECCIÓN DE ACCESO A Q10
+========================================= */
+
+.q10-section {
+  position: relative;
+  padding: 90px 20px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(247, 201, 51, 0.18),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #062f5c 0%, #0b4d88 100%);
+}
+
+.q10-section::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  right: -150px;
+  bottom: -190px;
+  border: 45px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+}
+
+.q10-container {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.q10-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #f7c933;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.q10-content h2 {
+  max-width: 650px;
+  margin: 0 0 22px;
+  color: #ffffff;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.05;
+}
+
+.q10-content p {
+  max-width: 650px;
+  margin-bottom: 32px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.q10-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px 24px;
+  border-radius: 10px;
+  color: #062f5c;
+  background: #f7c933;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.q10-button:hover {
+  color: #062f5c;
+  background: #ffda57;
+  transform: translateY(-3px);
+}
+
+.q10-card {
+  padding: 42px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.22);
+}
+
+.q10-card-label {
+  display: block;
+  margin-bottom: 25px;
+  color: #75808a;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.q10-logo {
+  width: min(240px, 80%);
+  height: auto;
+  margin: 0 auto 25px;
+  display: block;
+}
+
+.q10-card p {
+  max-width: 330px;
+  margin: 0 auto;
+  color: #4f5d68;
+  line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+  .q10-section {
+    padding: 70px 20px;
+  }
+
+  .q10-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .q10-content {
+    text-align: center;
+  }
+
+  .q10-content p {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .q10-card {
+    padding: 35px 25px;
+  }
+}
